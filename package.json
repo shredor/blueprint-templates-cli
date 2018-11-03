@@ -5,7 +5,9 @@
   "main": "index.js",
   "author": "Anton Pavlov",
   "license": "MIT",
-  "postinstall": "yarn add https://github.com/reesemclean/blueprint#613c7847e6c0ea2ed3d7c37d5189cd7dc6ca3ca0 --ignore-scripts",
+  "scripts": {
+    "postinstall": "yarn add -P https://github.com/reesemclean/blueprint#613c7847e6c0ea2ed3d7c37d5189cd7dc6ca3ca0 --ignore-scripts"
+  },
   "peerDependencies": {
     "blueprint": "https://github.com/reesemclean/blueprint#613c7847e6c0ea2ed3d7c37d5189cd7dc6ca3ca0"
   }
