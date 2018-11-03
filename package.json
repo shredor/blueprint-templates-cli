@@ -1,14 +1,30 @@
 {
   "name": "blueprint-templates-cli",
-  "version": "0.1.0",
-  "description": "CLI for vscode blueprint-templates-extension",
-  "main": "index.js",
+  "version": "0.1.1",
+  "description": "CLI for vscode blueprint-templates extension",
+  "main": "./out/src/cli.js",
   "author": "Anton Pavlov",
   "license": "MIT",
-  "scripts": {
-    "postinstall": "yarn add -P https://github.com/reesemclean/blueprint#613c7847e6c0ea2ed3d7c37d5189cd7dc6ca3ca0 --ignore-scripts"
+  "bin": {
+    "create-component": "./out/src/cli.js"
   },
-  "peerDependencies": {
-    "blueprint": "https://github.com/reesemclean/blueprint#613c7847e6c0ea2ed3d7c37d5189cd7dc6ca3ca0"
+  "scripts": {
+    "lint": "node ./node_modules/tslint/bin/tslint \"src/**/*.ts\"",
+    "prepublish": "tsc -p ./",
+    "compile": "tsc -watch -p ./",
+    "create-component": "chmod +x ./out/src/cli.js && ./out/src/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^10.12.2",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "@types/inquirer": "^0.0.43",
+    "fs-extra": "^7.0.0",
+    "handlebars": "^4.0.12",
+    "inquirer": "^6.2.0",
+    "inquirer-path": "^1.0.0-beta5"
   }
 }
