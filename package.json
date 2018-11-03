@@ -1,6 +1,6 @@
 {
   "name": "blueprint-templates-cli",
-  "version": "0.1.6",
+  "version": "0.1.7",
   "description": "CLI for vscode blueprint-templates extension",
   "main": "./out/src/cli.js",
   "author": "Anton Pavlov",
