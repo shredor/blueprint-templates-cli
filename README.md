@@ -1,3 +1,13 @@
+<p align="left">
+  <a href="https://www.npmjs.com/package/blueprint-templates-cli">
+    <img src="https://img.shields.io/npm/v/blueprint-templates-cli.svg?color=green" alt="Version" />
+  </a>
+
+  <a href="https://www.npmjs.com/package/blueprint-templates-cli">
+    <img src="https://img.shields.io/npm/dt/blueprint-templates-cli.svg" alt="Downloads" />
+  </a>
+</p>
+
 ### About tool
 It is CLI for VSCode Blueprint extension ([github](https://github.com/reesemclean/blueprint), [visualstudio marketplace](https://marketplace.visualstudio.com/items?itemName=teamchilla.blueprint))
 
