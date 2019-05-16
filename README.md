@@ -22,6 +22,7 @@ or
 #### Launch command
  - `node node_modules/.bin/create-component` for locally installed package
  - `create-component` for globally installed package
+ - use cli option `-p path/to/templates/folder` to override default template folder path
 
 #### Enter information for creating new component
 - Select a target directory for your component (Tab complete)

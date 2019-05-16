@@ -8,6 +8,10 @@
   "bin": {
     "create-component": "./out/src/cli.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shredor/blueprint-templates-cli.git"
+  },
   "scripts": {
     "lint": "node ./node_modules/tslint/bin/tslint \"src/**/*.ts\"",
     "prepublish": "tsc -p ./",

@@ -13,8 +13,6 @@ args.option("path", "The path of template folder", "blueprint-templates");
 
 const templatesPath = args.parse(process.argv).path as string;
 
-console.log(process.argv);
-
 inquirer.registerPrompt("path", PathPrompt);
 
 export async function getInput(): Promise<any> {
@@ -50,6 +48,6 @@ export async function getInput(): Promise<any> {
   return {
     directoryPath: answers.path,
     inputNames: answers.name.split(","),
-    selectedTemplatePath: resolve(process.cwd(), "blueprint-templates", answers.type),
+    selectedTemplatePath: resolve(process.cwd(), templatesPath, answers.type),
   };
 }
