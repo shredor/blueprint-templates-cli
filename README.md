@@ -1,6 +1,6 @@
 <p align="left">
   <a href="https://www.npmjs.com/package/blueprint-templates-cli">
-    <img src="https://img.shields.io/npm/v/blueprint-templates-cli.svg?color=green" alt="Version" />
+    <img src="https://img.shields.io/npm/v/blueprint-templates-cli.svg?color=brightgreen" alt="Version" />
   </a>
 
   <a href="https://www.npmjs.com/package/blueprint-templates-cli">
