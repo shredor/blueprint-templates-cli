@@ -28,6 +28,9 @@ export function initializeHandlebars() {
     upperCase: (input) => {
       return _.upperCase(input);
     },
+    upperSnakeCase: (input) => {
+      return _.upperCase(input).replace(/ /g, '_');
+    },
   });
 }
 
@@ -56,6 +59,7 @@ export function replaceStringUsingTransforms(stringToReplace: string, name: stri
   result = replaceAll(result, "__camelCase_name__", _.camelCase(name));
   result = replaceAll(result, "__upperCase_name__", _.upperCase(name));
   result = replaceAll(result, "__lowerCase_name__", _.lowerCase(name));
+  result = replaceAll(result, "__name__", name);
   return result;
 }
 
